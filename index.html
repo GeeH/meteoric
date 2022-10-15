@@ -1,0 +1,50 @@
+<!doctype html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8"/>
+    <title>Follow geehlive on Twitch</title>
+    <script src="//cdn.jsdelivr.net/npm/phaser@3.55.2/dist/phaser.js"></script>
+    <script src="/src/declare.js"></script>
+    <script src="/src/preload.js"></script>
+    <script src="/src/create.js"></script>
+    <script src="/src/bulletCollided.js"></script>
+    <script src="/src/baddieCollided.js"></script>
+    <script src="/src/updateBaddies.js"></script>
+    <script src="/src/update.js"></script>
+    <script src="/src/getBaddieToShoot.js"></script>
+    <script src="/src/doSelectionProcess.js"></script>
+    <style>
+        body {
+            margin: 0;
+        }
+    </style>
+</head>
+<body>
+
+
+<script type="text/javascript">
+
+
+    let config = {
+        type: Phaser.AUTO,
+        width: 1920,
+        height: 1080,
+        scene: {
+            preload: preload,
+            create: create,
+            update: update
+        },
+        physics: {
+            default: 'arcade',
+            arcade: {
+                debug: false
+            }
+        },
+    };
+
+    new Phaser.Game(config);
+
+</script>
+
+</body>
+</html>
